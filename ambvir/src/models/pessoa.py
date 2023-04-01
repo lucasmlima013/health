@@ -18,4 +18,11 @@ def __init__(self, id_pessoa, nome, data_nascimento, plano, numero_plano):
     self.numero_plano = numero_plano
     
 
-    
+def json(self):
+        return {
+            'id_pessoa': self.id_pessoa,
+            'nome': self.nome,
+            'data_nascimento': self.data_nascimento,
+            'plano': self.setor_id,
+            'numero_plano': self.cargo_id
+        }
