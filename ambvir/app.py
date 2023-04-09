@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_restful import Api
-from src.dbs.database import banco
+from src.dbs.database import banco, app
 
-app = Api(app)
+api = Api(app)
 
 @app.route('/')
 def index():
